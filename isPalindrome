@@ -1,0 +1,7 @@
+class Solution(object):
+    def isPalindrome(self, s):
+        result = s.replace(" ", "").replace(",", "").replace(":","").replace(".", "").replace("@", "").replace("#", "").replace("_", "").lower()
+        a=result[::-1]
+        if result==a:
+            return True
+        return False
