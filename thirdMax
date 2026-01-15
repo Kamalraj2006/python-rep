@@ -1,0 +1,6 @@
+def thirdMax(nums):
+    distinct = sorted(set(nums), reverse=True)
+    if len(distinct) >= 3:
+        return distinct[2]   # third maximum
+    else:
+        return distinct[0]
